@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -9,6 +9,9 @@ def home():
     lastname = "Saithong-in"
     return f"Hello My name is {name} {lastname}"
 
+@app.route("/game")
+def game():
+    return render_template('index.html')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
