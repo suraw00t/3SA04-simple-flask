@@ -47,7 +47,7 @@
                         <ul>
                             <li><a href="#"><i class="fw-icon-facebook icon"></i></a></li>
                             <li><a href="#"><i class="fw-icon-twitter icon"></i></a></li>
-                            <li><a href="#"><i class="fw-icon-linkedin icon"></i></a></li>
+                            <li><a href="{{ url_for('login') }}"> login</i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -97,11 +97,12 @@
                                     <!-- Carousel items -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img src="{{ url_for('static', filename='home/img/banner-image.jpg') }}" alt="">
+                                {#<img src="{{ url_for('static', filename='home/img/banner-image.jpg') }}" alt="">#}
+                                <img src="https://www.edopedia.com/blog/wp-content/uploads/2018/04/Astray_700.jpg?ezimgfmt=ng:webp/ngcb4" alt="">
                                 <div class="carousel-caption">
                                     <i class="fw-icon-desktop"></i>
                                   <h2>Game</h2>
-                                  {#<h1>คลิ๊กเพื่อเล่นเกม</h1>#}
+                                  <h1>Astray</h1>
                                   <a href=" {{ url_for('game')  }}" role="button" class="btn" data-toggle="modal"> Click to play game</a>
                                 </div>
                             </div>

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template
 from forms import simpleForm
 
 app = Flask(__name__)
@@ -28,9 +28,6 @@ def home():
 def login():
     form = simpleForm()
 
-    name = request.args.get("name", "Surawut")
-
-    print(form.validate_on_submit)
     return render_template("login/index.html", form=form)
 
 
