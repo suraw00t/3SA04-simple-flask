@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     name = "Surawut"
     lastname = "Saithong-in"
-    msg = f"Hello My name is {name} {lastname}"
+    # msg = f"Hello My name is {name} {lastname}"
     return render_template("index.html")
 
 
